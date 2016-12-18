@@ -1,19 +1,24 @@
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Lato', sans-serif;
   padding: 20px;
   margin: 0;
   font-weight: 400;
+  color:#615b5b;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   @media (min-width: 992px) {
     padding: 35px 50px;
   }
 }
+h1 {
+  color: #121111;
+}
 h2,
 h3,
 h4,
 h5 {
   margin: 45px 0 25px;
+  color:#121111;
 }
 img {
   max-width: 100%;
@@ -117,8 +122,10 @@ span[data-note] {
   -webkit-animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: bounce;
+  
   a {
-    background: #ddd url("gravatar_wrapper.png");
+    /* background: #ddd url("gravatar_wrapper.png");  */
+    background: #ddd;
     color: #000;
     text-decoration: none;
     font-weight: 700;
@@ -133,14 +140,14 @@ span[data-note] {
     box-sizing: border-box;
     &:hover,
     &:focus {
-      background: #f14e32;
+      background: #edbcce;
     }
     &:hover + .logo-prompt,
     &:focus + .logo-prompt {
       display: inline-block !important;
     }
     .gravatar {
-      margin-top: 5px;
+      margin-top: 0px;   /* 5px */
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -177,6 +184,20 @@ span[data-note] {
       left: -5px;
       margin-top: -5px;
     }
+  }
+}
+.blog-title
+{
+  position: relative;
+  margin: 0 auto 35px;
+  text-align: center;
+  .divider {
+    background: #ddd;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    height: 1px;
+    margin: 2em 0;
   }
 }
 iframe {
@@ -251,7 +272,7 @@ iframe {
   width: 100%;
 }
 article {
-  max-width: 500px;
+  max-width: 650px;
   margin: 0 auto;
   .title {
     line-height: 1.4em;
@@ -276,7 +297,7 @@ article {
   }
   p {
     font-size: 15px;
-    line-height: 1.9em;
+    line-height: 1.7em;
     word-wrap: break-word;
   }
   .footnote {
@@ -335,7 +356,7 @@ article {
   }
 }
 section {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto 50px auto;
   ul {
     list-style: none;
@@ -353,7 +374,7 @@ section {
       a {
         text-decoration: none;
         border: 0;
-        color: #000;
+        color: #615b5b;
         box-sizing: border-box;
       }
       .post-date {
